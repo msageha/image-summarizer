@@ -16,11 +16,17 @@
 
 ## 使い方
 
-以下は、`n=4` で `4×4=16枚` の画像を使用し、`300px` のタイルサイズで `collage.png` に出力する例です。
+以下は、`n=3` で `3×3=9枚` の画像を使用し、`300px` のタイルサイズで `output.png` に出力する例です。
+
+samplesディレクトリ配下にある9枚の画像が1枚の画像に集約されます。
 
 ```bash
-go run main.go -dir /path/to/images -out collage.png -n 4 -tile 300
+go run main.go -dir ./samples -out output.png -n 3
 ```
+
+- 出力
+
+![output](output.png)
 
 オプション一覧:
 
